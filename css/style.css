@@ -296,3 +296,10 @@ body {
 #btnCourses9 {
     display: none;
 }
+
+.rim {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
