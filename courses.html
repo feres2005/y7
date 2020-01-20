@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body>
+    <title>Courses</title>
+    <nav class="navbar navbar_inverse">
+
+        <a class="navbar-brand" href="#"><img src="https://gomycode.tn/images/section2GMCLogo.png"
+                style="width:50px;height:50px;"></a>
+        <center> <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a></center>
+        <hr>
+    </nav>
+    <div class="header">
+        <h3>
+            <font face="arial">courses</font>
+        </h3>
+    </div>
+    <div class="courses-container">
+        <div class="mouhamed">
+            <center class="center">
+                <div class="course1">
+                    <button id="btnCourses1">
+                        view more
+                    </button>
+
+                </div>
+
+
+                <div class="course2">
+                    <button id="btnCourses2">
+                        view more
+                    </button>
+                </div>
+
+
+                <div class="course3">
+                    <button id="btnCourses3">
+                        view more
+                    </button>
+                </div><br>
+
+                <div class="course4">
+                    <button id="btnCourses4">
+                        view more
+                    </button>
+                </div>
+
+
+                <div class="course5">
+                    <button id="btnCourses5">
+                        view more
+                    </button>
+                </div>
+
+                <div class="course6">
+                    <button id="btnCourses6">view more
+                    </button>
+                </div><br>
+                <center class="center">
+                    <div class="course7">
+                        <button id="btnCourses7">view more
+                        </button>
+                    </div>
+                </center>
+                <center class="center">
+                    <div class="course8">
+                        <button id="btnCourses8">view more
+                        </button>
+                    </div>
+                </center>
+                <center class="center">
+                    <div class="course9">
+                        <button id="btnCourses9">view more
+                            </boutton>
+                    </div><br></button>
+        </div>
+        <center>
+            <h1>feedback</h1>
+        </center>
+        <center>
+            <button onclick="bold()">B</button>
+            <button onclick="italicText()">I</button>
+            <button onclick="underlineText()">Underline</button>
+            <select id="size" onchange="val()">
+                <option>20px</option>
+                <option>30px</option>
+                <option>40px</option>
+            </select>
+
+            <select id="font" onchange="changefont()">
+                <option value="Arial">Arial</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Idek">Idek</option>
+            </select>
+            <br>
+            <br>
+            <form action="">
+                <textarea id="text" cols="30" rows="10"></textarea></form>
+            </form>
+        </center>
+
+    </div>
+    <div id="myModal" class="modal" style="opacity: 1; display: none;">
+        <p>This is a GoMyCode Track. <br>
+            Each track has its own goal. <br>
+            By adopting this track, you chose your own goal.
+        </p>
+</body>
+<script src="main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".course1").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course2").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course3").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course4").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course5").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course6").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course7").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course8").click(function () {
+            $("#myModal").modal();
+        });
+        $(".course9").click(function () {
+            $("#myModal").modal();
+        });
+
+        $(".course1").hover(function () {
+            $("#btnCourses1").toggle();
+        })
+        $(".course2").hover(function () {
+            $("#btnCourses2").toggle();
+        })
+        $(".course3").hover(function () {
+            $("#btnCourses3").toggle();
+        });
+
+
+        $(".course4").hover(function () {
+            $("#btnCourses4").toggle();
+        })
+        $(".course5").hover(function () {
+            $("#btnCourses5").toggle();
+        })
+        $(".course6").hover(function () {
+            $("#btnCourses6").toggle();
+        });
+
+
+        $(".course7").hover(function () {
+            $("#btnCourses7").toggle();
+        })
+        $(".course8").hover(function () {
+            $("#btnCourses8").toggle();
+        })
+        $(".course9").hover(function () {
+            $("#btnCourses9").toggle();
+        });
+
+    });
+</script>
+
+</html>
